@@ -1,0 +1,18 @@
+n_classes: 20
+task_nm: multiclass
+lr: 0.0001
+image_size: 256
+patch_size: 16
+in_channels: 3
+embed_dim: 768
+qkv_dim: 64
+mlp_hidden_size: 3072
+n_layers: 12
+n_heads: 12
+attention_dropout_rate: 0.1
+mlp_dropout_rate: 0.1
+data_config:
+    data_path: /home/${oc.env:USER}/data/headgear-image-classification/
+    ann_file: headgear.csv.csv
+    batch_size: 16
+    n_workers: 32
